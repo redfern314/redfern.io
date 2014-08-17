@@ -1,0 +1,74 @@
+extends ./style.jade
+block head
+    title Home | Derek Redfern
+    script(src='/js/home.js')
+block body
+  body
+    div(class="navbar-wrapper")
+      div(class="container")
+        div(class="navbar navbar-inverse" role="navigation")
+          div(class="container")
+            div(class="navbar-header")
+              a(class="navbar-brand" href="") Derek Redfern
+              //- button(type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse")
+              //-   span(class="sr-only") Toggle navigation
+              //-   span(class="icon-bar")
+              //-   span(class="icon-bar")
+              //-   span(class="icon-bar")
+            //- div(class="navbar-collapse collapse navbar-responsive-collapse")
+            //-   ul(class="nav navbar-nav navbar-right")
+            //-     li
+            //-       ul(class="breadcrumb breadcrumb-inverse")
+            //-         li(class="active") Home
+            //-     li
+            //-       a(href="/") Log Out
+
+    div(class="container")
+      div(class="row")
+        div(class="col-xs-12")
+          div(id="mainCarousel" class="carousel slide" data-ride="carousel")
+            ol(class="carousel-indicators")
+              li(data-target="#myCarousel" data-slide-to="0" class="active" )
+              li(data-target="#myCarousel" data-slide-to="1" )
+              li(data-target="#myCarousel" data-slide-to="2" )
+            div(class="carousel-inner")
+              div(class="item active")
+                //- img(src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide")
+                div(class="container")
+                  div(class="carousel-caption")
+                    h1 Embedded Devices
+                    p It would probably be beneficial to say something here.
+              div(class="item")
+                //- img(src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide")
+                div(class="container")
+                  div(class="carousel-caption")
+                    h1 Product Design
+                    p Or, maybe it's more fun to put in filler text.
+              div(class="item")
+                //- img(src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide")
+                div(class="container")
+                  div(class="carousel-caption")
+                    h1 Hiking, Circus Arts, and Other Adventures
+                    p People don't like filler text.
+            a(class="left carousel-control" href="#myCarousel" role="button" data-slide="prev") 
+              span(class="glyphicon glyphicon-chevron-left")
+            a(class="right carousel-control" href="#myCarousel" role="button" data-slide="next") 
+              span(class="glyphicon glyphicon-chevron-right")
+          br
+      div(class="row")
+        div(class="col-md-6 col-lg-3 hcenter")
+          h2 Work Experience
+          p Yadda yadda this is what I did.
+          a(class="btn btn-lg btn-primary" href="#" role="button") Learn more
+        div(class="col-md-6 col-lg-3 hcenter")
+          h2 Coursework @ Olin
+          p Here's what taught me how to do what I did.
+          a(class="btn btn-lg btn-primary" href="#" role="button") Learn more
+        div(class="col-md-6 col-lg-3 hcenter")
+          h2 Side Projects
+          p Sometimes I did what I did on the side.
+          a(class="btn btn-lg btn-primary" href="#" role="button") Learn more
+        div(class="col-md-6 col-lg-3 hcenter")
+          h2 Adventures
+          p And other times, I like to do something completely different.
+          a(class="btn btn-lg btn-primary" href="#" role="button") Learn more

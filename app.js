@@ -1,46 +1,30 @@
-
-/**
- * Module dependencies.
+/* redfern.io
+ * 8/16/14
+ * Author: Derek Redfern
+ *
  */
 
-var express = require('express')
-  , http = require('http')
-  , path = require('path')
-  // , Facebook = require('facebook-node-sdk')
-  , mongoose = require('mongoose')
-  , bodyParser = require('body-parser')
-  , cookieParser = require('cookie-parser');
-
+// Module imports
+var dotenv = require('dotenv');
+var express = require('express');
+// var pages = require('./routes/pages');
 var app = express();
-mongoose.connect('mongodb://localhost/redfern');
-// var models = require('./models/models');
-// var Station = models.Station;
 
-app.set('port', process.env.PORT || 8080);
-app.set('views', __dirname + '/views');
+// Load the environment variables from the .env file
+dotenv.load();
+
+// Jade is our default rendering engine; use public for static files
 app.set('view engine', 'jade');
-// app.use(express.favicon());
-// app.use(express.logger('dev'));
-app.use(bodyParser());
-app.use(cookieParser(process.env.COOKIE_SECRET || "localsecret"));
-// app.use(express.session());
-// app.use(express.methodOverride());
-// app.use(Facebook.middleware({appId: process.env.FB_APPID, secret: process.env.FB_SECRET}));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + '/public'));
+app.locals.pretty = true; // prettify HTML
 
-app.use(function(req, res, next){
-  res.render('404', { status: 404, url: req.url, title: 'Something went wrong' });
+// HTTP endpoints
+
+app.get("/",function(req,res){
+    res.render("home");
 });
 
-
-app.use(function(err, req, res, next){
-  res.render('500', { status: err.status || 500, error: err, title: 'Something went wrong'});
+// Get the server up and running!
+var server = app.listen(process.env.PORT, function() {
+    console.log('Listening on port %d', server.address().port);
 });
-
-server = http.createServer(app).listen(app.get('port'), function(){
-  console.log("Express server listening on port " + app.get('port'));
-});
-
-var scope = {scope: ['']};
-
-app.get('/', function(req,res){res.send("Test Node Instance")});
