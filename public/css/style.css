@@ -33,3 +33,7 @@ body { padding-top: 25px; }
 .bottompad {
     margin-bottom: 20px;
 }
+
+.darkrule {
+    color: #000000;
+}

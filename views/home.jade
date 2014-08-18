@@ -9,19 +9,26 @@ block body
         div(class="navbar navbar-inverse" role="navigation")
           div(class="container")
             div(class="navbar-header")
+              button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+                span(class="sr-only") Toggle navigation
+                span(class="icon-bar")
+                span(class="icon-bar")
+                span(class="icon-bar")
               a(class="navbar-brand" href="") Derek Redfern
-              //- button(type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse")
-              //-   span(class="sr-only") Toggle navigation
-              //-   span(class="icon-bar")
-              //-   span(class="icon-bar")
-              //-   span(class="icon-bar")
-            //- div(class="navbar-collapse collapse navbar-responsive-collapse")
-            //-   ul(class="nav navbar-nav navbar-right")
-            //-     li
-            //-       ul(class="breadcrumb breadcrumb-inverse")
-            //-         li(class="active") Home
-            //-     li
-            //-       a(href="/") Log Out
+            div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+              ul(class="nav navbar-nav")
+                li(class="active")
+                  a(href="/") Home
+                li
+                  a(href="/work") Work
+                li
+                  a(href="/courses") Courses
+                li
+                  a(href="/projects") Projects
+                li
+                  a(href="/adventures") Adventures
+                li
+                  a(href="/contact") Contact
 
     div(class="container")
       div(class="row")
@@ -56,19 +63,29 @@ block body
               span(class="glyphicon glyphicon-chevron-right")
           br
       div(class="row")
+        div(class="col-xs-12")
+          div(class="panel panel-default")
+            div(class="panel-heading")
+              h3 About me
+            div(class="panel-body")
+              | Testing testing! We'll put a picture of me here, aligned to the right side.
+      div(class="row")
         div(class="col-md-6 col-lg-3 hcenter")
           h2 Work Experience
-          p Yadda yadda this is what I did.
-          a(class="btn btn-lg btn-primary" href="#" role="button") Learn more
+          p My 4 internships so far have spanned 3 different metro areas and a variety of different tech-centric markets. Here's what I've worked on (or, at least, what I can tell you about).
+          a(class="btn btn-sm btn-primary" href="/work" role="button") More about my work
         div(class="col-md-6 col-lg-3 hcenter")
           h2 Coursework @ Olin
-          p Here's what taught me how to do what I did.
-          a(class="btn btn-lg btn-primary" href="#" role="button") Learn more
+          p My major is Engineering with a Concentration in Computing. These are the classes I chose to complete my concentration, as well as a brief overview of the F. W. Olin College of Engineering.
+          a(class="btn btn-sm btn-primary" href="/courses" role="button") What's Olin?
         div(class="col-md-6 col-lg-3 hcenter")
           h2 Side Projects
-          p Sometimes I did what I did on the side.
-          a(class="btn btn-lg btn-primary" href="#" role="button") Learn more
+          p Writing firmware for electric go-karts is pretty cool. Everybody needs a hobby, they say...
+          a(class="btn btn-sm btn-primary" href="/projects" role="button") More about REVO
         div(class="col-md-6 col-lg-3 hcenter")
           h2 Adventures
-          p And other times, I like to do something completely different.
-          a(class="btn btn-lg btn-primary" href="#" role="button") Learn more
+          p Long-distance hiking. Mountaineering. Fire arts. Unicycling. This is what I do in my spare time!
+          a(class="btn btn-sm btn-primary" href="/adventures" role="button") Sounds dangerous. Tell me about it!
+        br
+        br
+      include ./footer.jade

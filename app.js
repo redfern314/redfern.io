@@ -24,6 +24,27 @@ app.get("/",function(req,res){
     res.render("home");
 });
 
+app.get("/work",function(req,res){
+    res.render("work");
+});
+
+app.get("/courses",function(req,res){
+    res.render("courses");
+});
+
+app.get("/projects",function(req,res){
+    res.render("contact");
+});
+
+app.get("/adventures",function(req,res){
+    res.render("adventures");
+});
+
+app.get("/contact",function(req,res){
+    res.render("contact");
+});
+
+
 // Get the server up and running!
 var server = app.listen(process.env.PORT, function() {
     console.log('Listening on port %d', server.address().port);
