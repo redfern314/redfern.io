@@ -33,7 +33,7 @@ app.get("/courses",function(req,res){
 });
 
 app.get("/projects",function(req,res){
-    res.render("contact");
+    res.render("projects");
 });
 
 app.get("/adventures",function(req,res){
