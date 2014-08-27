@@ -14,7 +14,7 @@ block body
                 span(class="icon-bar")
                 span(class="icon-bar")
                 span(class="icon-bar")
-              a(class="navbar-brand" href="") Derek Redfern
+              a(class="navbar-brand" href="/") Derek Redfern
             div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
               ul(class="nav navbar-nav")
                 li(class="active")
@@ -40,23 +40,23 @@ block body
               li(data-target="#myCarousel" data-slide-to="2" )
             div(class="carousel-inner")
               div(class="item active")
-                //- img(src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide")
+                img(src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==")
                 div(class="container")
                   div(class="carousel-caption")
                     h1 Embedded Devices
-                    p It would probably be beneficial to say something here.
+                    p I work at the intersection of hardware and software.
               div(class="item")
-                //- img(src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide")
+                img(src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==")
                 div(class="container")
                   div(class="carousel-caption")
-                    h1 Product Design
-                    p Or, maybe it's more fun to put in filler text.
+                    h1 Consumer Product Design
+                    p I enjoy making physical products that are designed with consumers in mind, with a focus on user-oriented design.
               div(class="item")
-                //- img(src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide")
+                img(src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==")
                 div(class="container")
                   div(class="carousel-caption")
                     h1 Hiking, Circus Arts, and Other Adventures
-                    p People don't like filler text.
+                    p I do not define myself solely by my ability to code; instead, I am a fusion of mountain man and engineer.
             a(class="left carousel-control" href="#myCarousel" role="button" data-slide="prev") 
               span(class="glyphicon glyphicon-chevron-left")
             a(class="right carousel-control" href="#myCarousel" role="button" data-slide="next") 
@@ -68,12 +68,24 @@ block body
             div(class="panel-heading")
               h3 About me
             div(class="panel-body")
-              | Testing testing! We'll put a picture of me here, aligned to the right side.
+              div(class="row")
+                div(class="col-lg-9")
+                  | Hi! I'm Derek Redfern. Originally from the town of Monroe, CT, I'm now a student at the Olin College of Engineering, 
+                  | class of 2015.5. I consider myself a firmware engineer by training, but practically speaking I try not to become
+                  | over-specialized and enjoy working on anything from PCB design all the way up to mobile/web app development. 
+                  | I'm passionate about hiking and the outdoors and love to explore. 
+                  br
+                  br
+                  | Welcome to my site, and feel free to 
+                  a(href="/contact") contact me 
+                  | if you'd like to talk more!
+                div(class="col-lg-3 right")
+                  img(src="img/me.png")
       div(class="row")
         div(class="col-md-6 col-lg-3 hcenter")
           h2 Work Experience
           p My 4 internships so far have spanned 3 different metro areas and a variety of different tech-centric markets. Here's what I've worked on (or, at least, what I can tell you about).
-          a(class="btn btn-sm btn-primary" href="/work" role="button") More about my work
+          a(class="btn btn-sm btn-primary" href="/work" role="button") About my work
         div(class="col-md-6 col-lg-3 hcenter")
           h2 Coursework @ Olin
           p My major is Engineering with a Concentration in Computing. These are the classes I chose to complete my concentration, as well as a brief overview of the F. W. Olin College of Engineering.
@@ -81,7 +93,7 @@ block body
         div(class="col-md-6 col-lg-3 hcenter")
           h2 Side Projects
           p Writing firmware for electric go-karts is pretty cool. Everybody needs a hobby, they say...
-          a(class="btn btn-sm btn-primary" href="/projects" role="button") More about REVO
+          a(class="btn btn-sm btn-primary" href="/projects" role="button") More about REVO etc
         div(class="col-md-6 col-lg-3 hcenter")
           h2 Adventures
           p Long-distance hiking. Mountaineering. Fire arts. Unicycling. This is what I do in my spare time!

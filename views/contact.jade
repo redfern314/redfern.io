@@ -1,7 +1,6 @@
 extends ./style.jade
 block head
     title Contact | Derek Redfern
-    script(src='/js/home.js')
 block body
   body
     div(class="navbar-wrapper")
@@ -14,7 +13,7 @@ block body
                 span(class="icon-bar")
                 span(class="icon-bar")
                 span(class="icon-bar")
-              a(class="navbar-brand" href="") Derek Redfern
+              a(class="navbar-brand" href="/") Derek Redfern
             div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
               ul(class="nav navbar-nav")
                 li
@@ -46,46 +45,54 @@ block body
                     div(class="row")
                       div(class="col-md-4") Cell
                       div(class="col-md-4") 203.751.3870
-                      div(class="col-md-4") Testing
+                      div(class="col-md-4")
+                        a(href="tel:2037513870")
+                          button(class="btn btn-xs btn-primary") Call me
+                        a(href="sms:2037513870")
+                          button(class="btn btn-xs btn-primary") Text me
+                        |  (Mobile Only)
               tr
                 td 
                   div(class="container-fluid")
                     div(class="row")
                       div(class="col-md-4") Primary Email / Google Hangouts
                       div(class="col-md-4") redfern.derek@gmail.com
-                      div(class="col-md-4") Testing
+                      div(class="col-md-4")
+                        a(href="mailto:redfern.derek@gmail.com")
+                          button(class="btn btn-xs btn-primary") Shoot me an email
               tr
                 td 
                   div(class="container-fluid")
                     div(class="row")
                       div(class="col-md-4") Olin College Email
                       div(class="col-md-4") derek.redfern@students.olin.edu
-                      div(class="col-md-4") Testing
-              tr
-                td 
-                  div(class="container-fluid")
-                    div(class="row")
-                      div(class="col-md-4") Mailing Address
-                      div(class="col-md-4") Ask me. It changes frequently.
-                      div(class="col-md-4") 
+                      div(class="col-md-4")
+                        a(href="mailto:derek.redfern@students.olin.edu")
+                          button(class="btn btn-xs btn-primary") Shoot me an email
               tr
                 td 
                   div(class="container-fluid")
                     div(class="row")
                       div(class="col-md-4") Github
                       div(class="col-md-4") redfern314
-                      div(class="col-md-4") Testing
+                      div(class="col-md-4")
+                        a(href="http://github.com/redfern314/")
+                          button(class="btn btn-xs btn-primary") View my public code
               tr
                 td 
                   div(class="container-fluid")
                     div(class="row")
                       div(class="col-md-4") LinkedIn
-                      div(class="col-md-4") derek.redfern (?)
-                      div(class="col-md-4") Testing
+                      div(class="col-md-4") derekredfern
+                      div(class="col-md-4")
+                        a(href="https://www.linkedin.com/in/derekredfern")
+                          button(class="btn btn-xs btn-primary") Connect with me
               tr
                 td 
                   div(class="container-fluid")
                     div(class="row")
                       div(class="col-md-4") StackOverflow
-                      div(class="col-md-4") 203.751.3870
-                      div(class="col-md-4") Testing
+                      div(class="col-md-4") Derek Redfern
+                      div(class="col-md-4")
+                        a(href="http://stackoverflow.com/users/711386/derek-redfern")
+                          button(class="btn btn-xs btn-primary") View my answers

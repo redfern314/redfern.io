@@ -30,6 +30,11 @@ body { padding-top: 25px; }
     text-align: center;
 }
 
+/* Horizontally right-align text text */
+.right {
+    text-align: right;
+}
+
 .bottompad {
     margin-bottom: 20px;
 }
