@@ -42,3 +42,7 @@ body { padding-top: 25px; }
 .darkrule {
     color: #000000;
 }
+
+.italic {
+  font-style: italic;
+}
