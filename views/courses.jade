@@ -39,10 +39,15 @@ block body
                   h3 Human-Robot Interaction in the Factory of the Future
                   h5 Senior Capstone Project in Engineering - SCOPE (Fall 2014 / Senior)
                 div(class="col-xs-6 right")
-                  img(src="/img/rockwell.jpg")
+                  
             div(class="panel panel-body")
-              p About SCOPE: Olin College provides a unique hands-on senior capstone project option for all students in the form of solving an industry problem, sponsored by a company in the industry. This occurs in multi-disciplinary teams over the course of a whole year, and provides a chance to apply everything we've learned to an applied project.
-              p About our project: Rockwell Automation provides safety assessments and solutions to many factories, some of which use both automated processes as well as human workers to perform certain tasks. Our goal is to improve the ways in which humans and robots work in close proximity to one another by designing interactions within the "Factory of the Future", where live human-robot Interactions are not only feasible, but beneficial to manufacturing and productivity.
+              div(class="container-fluid")
+                div(class="row")
+                  div(class="col-xs-12 col-md-6")
+                    p About SCOPE: Olin College provides a unique hands-on senior capstone project option for all students in the form of solving an industry problem, sponsored by a company in the industry. This occurs in multi-disciplinary teams over the course of a whole year, and provides a chance to apply everything we've learned to an applied project.
+                    p About our project: Rockwell Automation provides safety assessments and solutions to many factories, some of which use both automated processes as well as human workers to perform certain tasks. Our goal is to improve the ways in which humans and robots work in close proximity to one another by designing interactions within the "Factory of the Future", where live human-robot Interactions are not only feasible, but beneficial to manufacturing and productivity.
+                  div(class="col-xs-12 col-md-6 hcenter")
+                    img(src="/img/rockwell.jpg")
       div(class="row")
         div(class="col-xs-12")
           div(class="panel panel-default")
@@ -50,7 +55,14 @@ block body
               h3 Autonomous Motorboat
               h5 Robotics I (Fall 2013 / Junior)
             div(class="panel panel-body")
-              //- | Filler Description
+              div(class="container-fluid")
+                div(class="row")
+                  div(class="col-xs-12 col-md-6")
+                    p Robotics I focused on controlling robots using a variety of sensors and actuators through LabVIEW. Our final project in the class was an autonomous motorboat that completed a variety of challenges, such as following set waypoints, handling sensor-blind environments, and chasing another boat that had been programmed by the course TAs.
+                    p Lessons learned: how to deal with existing undocumented code, spaghetti LabVIEW wires, and how to develop under uncertainty.
+                    p(class="italic") The attached video shows our autonomous boat completing the first of 3 challenges: navigating around a marked buoy and returning to the starting point. There is a camera mounted above the pool, and the boat has a basic onboard lidar system for when it's under the overhang.
+                  div(class="col-xs-12 col-md-6 hcenter")
+                    iframe(width="420" height="315" src="//www.youtube.com/embed/K4dqubcqSVM" frameborder="0" allowfullscreen)
       div(class="row")
         div(class="col-xs-12")
           div(class="panel panel-default")
@@ -58,7 +70,7 @@ block body
               h3 FPGA RFID Reader
               h5 Computer Architecture (Fall 2012 / Sophomore)
             div(class="panel panel-body")
-              //- | Filler Description
+              p Lessons learned: The RFID protocol has many different layers, including amplitude modulation, frequency shift keying, manchester encoding, and 26-bit Wiegand - we needed to research and then handle all of them in Verilog on our FPGA.
       div(class="row")
         div(class="col-xs-12")
           div(class="panel panel-default")
@@ -66,7 +78,7 @@ block body
               h3 Mechanical Sidescroller
               h5 Principles of Engineering (Spring 2012 / Sophomore)
             div(class="panel panel-body")
-              //- | Filler Description
+              p Lessons learned: Integration is the hardest part of any system, so leave plenty of time at the end!
       div(class="row")
         div(class="col-xs-12")
           div(class="panel panel-default")
@@ -74,12 +86,13 @@ block body
               h3 Collaborative Coding Application
               h5 Software Systems (Fall 2012 / Sophomore)
             div(class="panel panel-body")
-              //- | Filler Description
+              p Software Systems taught me about memory allocation, resource locking (semaphores, mutexes), and other low-level operations necessary for a kernel or RTOS. Another student and I designed a Google Docs-like collaborative code editor, complete with syntax highlighting, to put these lessons into practice. 
+              p Lessons learned: handling conflicts in a collaborative text editor is a tough problem.
       div(class="row")
         div(class="col-xs-12")
           div(class="panel panel-default")
             div(class="panel-heading")
-              h3 (Transporters)
+              h3 Inspired by nature: Transporter Animals
               h5 Design Nature (Fall 2011 / Freshman)
             div(class="panel panel-body")
-              //- | Filler Description
+              p Lessons learned: Users can and will try to break your product in very creative ways!
