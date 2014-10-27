@@ -70,7 +70,12 @@ block body
               h3 FPGA RFID Reader
               h5 Computer Architecture (Fall 2012 / Sophomore)
             div(class="panel panel-body")
+              p CompArch was all about building a MIPS CPU up from basic logic gates, and learning about everything in between. We did some MIPS assembly and even synthesized some of our designs onto an FPGA!
+              p My group's final project was creating an RFID reader for our school prox cards on an FPGA! One of my teammates created the analog circuit, and I handled the digital logic on the FPGA. Our final report can be found 
+                a(href="https://www.dropbox.com/s/ndem3ry4qf5p72d/rfid.pdf?dl=0") here 
+                | - but don't be fooled... the night after we turned in the report, we got the project to work at last! It read the ID number encoded into our cards and displayed it on the seven-segment display on the FPGA.
               p Lessons learned: The RFID protocol has many different layers, including amplitude modulation, frequency shift keying, manchester encoding, and 26-bit Wiegand - we needed to research and then handle all of them in Verilog on our FPGA.
+              p Additionally, after taking CompArch in 2012, I've TA'd for the class each time it has been taught since then, in Fall 2013 and Fall 2014. The best thing about TA'ing it is that I get to see the cool new labs become reality for the current students!
       div(class="row")
         div(class="col-xs-12")
           div(class="panel panel-default")
@@ -78,8 +83,15 @@ block body
               h3 Mechanical Sidescroller
               h5 Principles of Engineering (Spring 2012 / Sophomore)
             div(class="panel panel-body")
-              p Lessons learned: Integration is the hardest part of any system, so leave plenty of time at the end!
-      div(class="row")
+              div(class="row")
+                div(class="col-xs-12 col-md-6")
+                  p PoE is Olin's "intro to mechatronics" class - every project has to have a significant mechanical, electrical, and software component. Typically, teams have issues with integrating these systems...
+                  p Our mechanical sidescrolling game functioned much like the now-infamous Flappy Bird - although at the time we made the project, Flappy Bird was not out yet! Our goal was to take the standard "sidescroller" game and make it physical - so that the background scrolled past the character on a spool of paper, and the character moved up and down in front of it.
+                  p As expected, the compenents were tough to integrate, but we were happy with the MVP that we achieved, where the user can move the character up and down against a moving background (shown here!).
+                  p Lessons learned: Integration is the hardest part of any system, so leave plenty of time at the end!
+                div(class="col-xs-12 col-md-6 hcenter")
+                  iframe(width="260" height="415" src="//www.youtube.com/embed/fwG3-l6GuT0" frameborder="0" allowfullscreen)
+       div(class="row")
         div(class="col-xs-12")
           div(class="panel panel-default")
             div(class="panel-heading")
@@ -88,11 +100,12 @@ block body
             div(class="panel panel-body")
               p Software Systems taught me about memory allocation, resource locking (semaphores, mutexes), and other low-level operations necessary for a kernel or RTOS. Another student and I designed a Google Docs-like collaborative code editor, complete with syntax highlighting, to put these lessons into practice. 
               p Lessons learned: handling conflicts in a collaborative text editor is a tough problem.
-      div(class="row")
-        div(class="col-xs-12")
-          div(class="panel panel-default")
-            div(class="panel-heading")
-              h3 Inspired by nature: Transporter Animals
-              h5 Design Nature (Fall 2011 / Freshman)
-            div(class="panel panel-body")
-              p Lessons learned: Users can and will try to break your product in very creative ways!
+      //- div(class="row")
+      //-   div(class="col-xs-12")
+      //-     div(class="panel panel-default")
+      //-       div(class="panel-heading")
+      //-         h3 Inspired by nature: Transporter Animals
+      //-         h5 Design Nature (Fall 2011 / Freshman)
+      //-       div(class="panel panel-body")
+      //-         p 
+      //-         p Lessons learned: Users can and will try to break your product in very creative ways!
