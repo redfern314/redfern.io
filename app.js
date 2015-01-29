@@ -44,6 +44,10 @@ app.get("/contact",function(req,res){
     res.render("contact");
 });
 
+app.get("/ee-proto-lab-2",function(req,res){
+    res.sendfile("files/lab2.pdf");
+});
+
 
 // Get the server up and running!
 var server = app.listen(process.env.PORT, function() {
